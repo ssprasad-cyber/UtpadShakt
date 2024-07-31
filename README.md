@@ -25,9 +25,9 @@ UtpadShakt transforms the default new tab page of Chrome into a dynamic and pers
 
 ## Screenshots
 
-![Homepage Screenshot](screenshots/homepage.png)
-
-![Dino Game Screenshot](screenshots/dino_game.png)
+![Homepage Screenshot](assets/homepage-light.png)
+![Homepage Screenshot](assets/homepage-dark.png)
+![Homepage Screenshot](assets/bookmarks.png)
 
 
 ## Manual Installation
