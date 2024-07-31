@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sai's chrome</title>
+    <script src="clock.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    
+    <body>
+        <section class="preview">
+            <div class="left">
+                <div class="power-1">
+                    <input id="checkbox" type="checkbox" />
+                    <label class="switch" for="checkbox" id="power">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="slider">
+                        <path
+                        d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V256c0 17.7 14.3 32 32 32s32-14.3 32-32V32zM143.5 120.6c13.6-11.3 15.4-31.5 4.1-45.1s-31.5-15.4-45.1-4.1C49.7 115.4 16 181.8 16 256c0 132.5 107.5 240 240 240s240-107.5 240-240c0-74.2-33.8-140.6-86.6-184.6c-13.6-11.3-33.8-9.4-45.1 4.1s-9.4 33.8 4.1 45.1c38.9 32.3 63.5 81 63.5 135.4c0 97.2-78.8 176-176 176s-176-78.8-176-176c0-54.4 24.7-103.1 63.5-135.4z"
+                        ></path>
+                    </svg>
+                    </label>
+                </div>
+            </div>
+            <div class="middle0">
+                <div class="greet"><h1>hello sai prasad</h1>
+                <hr class="line"/>
+                </div>
+                
+                <div id="links-container" ></div>
+                <div><br><br><br><br><br><br>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="nti">
+                    <div id="clock" > <span id="time" > </span><SPAn id="second" ></SPAn></div>
+                    <div id="calender" > <span id="date" ></span></div>
+                </div>
+
+                <div id="g-search">
+                    <div>
+                        <div id="search-engine">
+                            <button type="button"  data-action="https://www.google.com/search">Google</button>
+                            <button type="button" data-action="https://www.youtube.com/results">YouTube</button>
+                            <button type="button" data-action="https://gemini.google.com/">Gemini</button>
+                            <button type="button" data-action="https://chat.openai.com/">ChatGPT</button>
+                            
+                            
+                        </div>
+                    </div>
+                    <form action="https://www.google.com/search" target="_blank" method="GET" accept="Search">
+                        <input type="text" name="q" id="search" placeholder="QUICK SEARCH" style="color: black;" required autocomplete="off">
+                        <button type="reset" id="clear"><i class="fa-solid fa-circle-xmark"></i></button>
+                        <button type="submit" id="search-btn">Search</button>
+                    </form>
+                </div> 
+                <div id="dino">
+                    <iframe src="./dino.html" width="100%" height="20%" scrolling="no"  loading="eager"  ></iframe>
+                    
+                </div>
+                <div id="quote">
+                    <p id="quote-text"></p>
+                    
+                    <h6 id="quote-author"></h6>
+                </div>
+                <div id="cR" class="cR"></div>
+            </div>
+            
+            <div class="right">
+                <div class="light">
+                    <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAABf0lEQVRYw+2Yv27CMBDGI0Q2eIAWmIExWyZYWRm8NjwDDQ8Ba2ZUJHgoBBuIORJMgeHXxbH6JzR2UtNW5bb4zt9nn8935zjOvxIG7NkzsEewA2Bnj0DKncA2AQ0C2qaHTIeARx34JjGQIEzCFMEZiGnlEwTSD5csiitzBBc5a5Rv3CVRFH0t+L6CT+iYredFi2BhvGdFMdayDk1d6jgOPeZMqKpvF8GSDSdObFgicJWuypg5vTKBO2TLR9ky/J7LVWHKNZlSKU8w4yuZlYUfKqiECJ8aNXwiFcqUchSu8v0B753G46DOwi1OINTqvU86T+1CFCdYSYgoUxtJ7Uqv1qbyJpmxlmN+5ixfatd5OGkaTkWlY45ypJ5JUJfaYx7ODQhsu8j6If9cmNq+aNZTxQ2S3Q3StaWCQ585oXbJnBiWTFX0Qy3r56I9BSwstC10SjVe3XzzUanWMcg3bhEDZ+PmNwFimjrreeCpQPveJqBxf0L9fQLrD3HbvxJ+pbwCCqClqFhqUswAAAAASUVORK5CYII=" style= "background-color: transparent;" width="30px" alt=""></button>
+                </div>
+                <div class="night">
+                    <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAcxJREFUSEvN1UvIDlEcBvDfV5Z2NihSlIVi4RZKblGEFZGFjVuyEVYWLtnRl5LksrBC2YiFWCkl162VIuVWkpKFUpw/Z2qMmfNOvX31TU1v7znn/zz/y/OcGTHGz8gY4xsXBGsxF/OxDB+xFD/7VD+ogvPYXwP6jtV40gc8zpQIXmEm3uMyjuES9vYFLxE8wpKUwAlcxDWswFbcHJbgEM7gCnZnsF/5d1BL/+NuBsRA7+W2LEjt+JAjbmMjVqZKHgxTwVGcyq05XgM6iNGW9YFczQpuYTMW42ktOiT6PP9fl2R6v4A8oS7hJsG7pJSpmIQvDZAY9p68NicN/GULSSR2DouqvSbBW0zDZHxqAaiGHVuhsPDDXWzBGuzIiU3vIriObSi1YR8uFFp0A9u7CA7jNI5kqXbhzMMGrMrOrpQVXvkntkumnzG7ZQ4l1bzGjGb1bca5ip0ps4dYPlCHfw+EpOMquYNN9ZguZ35LLZqYMgqyA6nsuOTanik4iV15MxRYmfPPUhdByO1xDnqThxqyfIEfmJV8sj5fJQFaqapuziJBlW24Otxdes5myX5tO9Tn8or7aWHtDZxntbfk6vHxyewppPZjfVo0FMFvtF9QGauaaWUAAAAASUVORK5CYII=" style= "background-color: transparent;" width="30px" alt=""></button>
+                </div>
+                <div id="dino-btn">
+                    <button>
+                        <img class="dino0" src="data:image/png;base64,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" width="30px" alt="dino">
+                        <img class="dino1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAABACAYAAABC6cT1AAAAAXNSR0IArs4c6QAABaZJREFUaEPtWr2S40QQ7pZk2fKuoe4RqCIjoEjJSHkHHoCEnOx4i8uJicmuiogHgIxHIGCp2rVlWTPDfcO0r1dnWyNLOnvLmqot767mp7/5vu7pHpnpRhvfKG6agN8a8xPjE+M3sgOT1G+E6D3MifGJ8RvZgUnqL4xoECakuWC7fEZBuRrGnXPWGMNpmu4NN8aQ/vsQot1uR7PZjJh5TkRVFGq1a7H9R+tXVZXLsgwASMDELrbdbun+/v7Huq5/JqK/Yzbg4ow754wxJhFmnXMePFpd14TNiG0YmyTJt0T0a9uYiwM3xrgkSbydkHaWZSsi2jnnyjbjm88BPMuyN9ba79vGXhy4c85pZpl5QUT49/ZMxl+/c+GfXgRwGFlVFeV57uUN5hCwrLWQbhuG/fMg9a+J6Pe2QVfFuA5q2AD4eltU1wAD8FdE9HD1wHe7nY/maJrhrjLH+AA8isyoTm271+c5nFlHcjm7ezAehSmqUx9gbWM96gbbwrzekLZ5XiTjbaCwAUHGz9wB6kDwY2YvG3wyc9TBfzWMHwMv0mfmHEd96AeVdMrNm/NfPXAlYX2u9QKNOTsDf3p6WhtjiqIokGuWi8Vi2SbVU8/Fx4/1kSNus9lQURRe8sYYm2WZxfHPzHfnrN8Z+GazgR/t8+jFYtF5DmVogly9zXB9vgdfts65qq7rX/I8/65t/KHn0UbjvC3Lku7u7nxigYoI0Xe5XEbPoQ3Q5/cpw5l51vDtc3B+MCba6IeHB4c0crlc+rJRztmiKOB7XXwOa4LpOqb8ZGYU6JD1oC0aOBgCw6Ho95UU/G61WkUbBpnqBCWm5Lw48LIsPavz+dxLHADwUxQFpFi30AFVgOWdJCuYowPws66XTrpQrH40cDliEGHTNEXCcCxA+eAFkKGv3ywpPKQiO2WDZHFBYW61WsWXaycmjpY6ojnmWSxQLr9vIfgAPFgX5mEcXCAzxqx1aSnAY0DLKrp4YbmeiWXsSL9OwMEagB9am5kLIpJbk0+cc//qNTXQmKAmYyWqb7dbi3r9IsDFxwE81Bb7TQg3J2Aa7H/lnPsN/QEYDUY3WY65RWVmf2qgWWtdmqYfX+oAjOCm26kKSp5pqSIXgGpipX7xqH7MxyXQNeUvoHHeI5jhE0ehbjGSF8Z7uvQHw6N9fL1e74ObBnmIVV1P43eJ4vgdY7vEp4sDf3x8XKdpWkCm4t/NGln7fYz/Cg26LzYHDSdB2LRocrqo4uxJdVWlLwq09LvcoMAV0JDU6I0YKoo3N+Vs4HjlA5/Vl4I6HRUQbSwcU8ZYQW1/TLYZ1vKcrbUWPqsBdGFa4gGqPWykJDtj+fZQwP0Bq0Hri4NjyU5zM+WI024ylsQHAx5S09w5txbQXe7Edd8QLKOrvT5qPdvHG4vO5SWfjuwx5zT66yNvbKaHZNyfPkT0KRH98A7I667vvDBByMnbyts+JD8bOxTjMukXzrk/8YcG3xb4urz6GQr50MA/J6K/JEiJ1LX8mRkZypfOuT/QTwLbx5L40FJ/RkSapv5iEsmIDng4qtI0hUtscEuqLxmyLBuahJPi6LsYxvvLw/CJfL5m5rfW2m8kYofgtSGiz8IrXLmxSay125C/97WlkxdEL2at/YeICnwzCckFvreS5zlXVcWoteXCP2RciPJrbUm4+N8g4YHPz2Yzv7akviJ1pAVQCR41q7kDt7n+VRJKXKhMXYVxkiTvvz51YEuigXfaTqKkLEuD2p2Z78PNzMF7OVgLtyiKYixbDpo+2mLy3ZbZbHYyIZE3KUEpHff3/O5jAvf1JVL5JEnw2unglRFeLPz/hpchW3yelOj5UJ+P7A0cd+UwPCQhe8Px/xC1GT6b5/nB99bWWgTD/bciQiIzFL6j8/QGPrqFIy0wAR9pY6922onxq6VmJMMmxkfa2Kud9j+c/F1uhsRZnAAAAABJRU5ErkJggg==" width="30px" alt="dino">
+
+                    </button>
+                </div>
+                <div class="quotes">
+                    <button type="button">
+                        <img class="quote1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAcUlEQVRYhe2SOQ7AIAwE9wV+sb/MG5IOEYTjoyFBOzQIjTRbABBCyNe4nJP1GKgHvPeoxwADfw6Mp0HMgOeFAhoMrLxAoEGg/Z71AgGFoPV71jPR5S4pexPjlrddUe/Y/fMfqXrmrucfqXrH7SeEkD3c1mwNH7hi8mIAAAAASUVORK5CYII=" width="25px" alt="quote_on/off">
+                        <img class="quote2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAc0lEQVRYw+2TsQ3AIAwEmcATe2Vm+FRIAUF4u0mC/ioUXXRfQClCCPExsCHqKZAP7L6zngIK/DnQUWHUQ5t4XMDJgOcCFQZv56jHBByG2s5Rbx3y2S5Y1ht/u2152sV65+4f7kjWW+/q7kjWO26/EEK8xAWxKEr948LfuQAAAABJRU5ErkJggg==" width="25px" alt="quote_on/off">
+                    </button>
+                </div>
+            </div>
+            
+        </section>
+        <script src="index.js"></script>
+        <script src="quote.js"></script>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

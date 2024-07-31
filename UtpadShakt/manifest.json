@@ -1,0 +1,53 @@
+{
+    "manifest_version": 3,
+    "name": "UtpadShakt",
+    "version": "1.0",
+    "description": "Set a custom homepage for new tabs.",
+    "author": "Sai Prasad",
+    "url": "https://github.com/ssprasad-cyber/UtpadShakt",
+    "icons": {
+      "16": "tabs.png",
+      "48": "tabs.png",
+      "128": "tabs.png"
+    },
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+    },
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        
+        "js": ["quote.js","dino.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "dino.html",
+          "dino.js",
+          "quote.js"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'; script-src-elem 'self';",
+      "sandbox": "sandbox allow-scripts"
+    },
+    "license": {
+        "type": "GPL-3.0",
+        "url": "https://opensource.org/licenses/GPL-3.0"
+    },
+    "developer": {
+      "name": "Sai Prasad",
+      "url": "https://github.com/ssprasad-cyber"
+  }
+}
+
