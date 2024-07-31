@@ -24,10 +24,11 @@ UtpadShakt transforms the default new tab page of Chrome into a dynamic and pers
 - **Double Tap on Search Engine Checkbox**: Redirect to the selected search engine’s homepage.
 
 ## Screenshots
-
-![Homepage Screenshot](assets/homepage-light.png)
-![Homepage Screenshot](assets/homepage-dark.png)
-![Homepage Screenshot](assets/bookmarks.png)
+<div style="display: flex; overflow-x: auto;">
+  <img src="assets/homepage-light.PNG" alt="Homepage Light Mode" style="width: 300px; margin-right: 10px;">
+  <img src="assets/homepage-dark.PNG" alt="Homepage Dark Mode" style="width: 300px; margin-right: 10px;">
+  <img src="assets/bookmarks.PNG" alt="Bookmarks" style="width: 300px;">
+</div>
 
 
 ## Manual Installation
