@@ -1,4 +1,4 @@
-# UtpadShakt
+# UtpadShakt  [chrome new tab]
 
 **UtpadShakt** is a customizable Chrome extension designed to enhance your new tab experience. It allows you to set a personalized homepage with various interactive features, including a Dino game and inspirational quotes. The extension offers a streamlined and customizable interface for a more enjoyable browsing experience.
 
